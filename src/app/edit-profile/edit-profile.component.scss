@@ -1,0 +1,26 @@
+$backgroundColor: #f8f9fa;
+$cardColor: #fff;
+$textColor: #343a40;
+$boxShadowColor: #e9ecef;
+
+.edit-profile-dialog {
+    background-color: $cardColor;
+    margin-top: 0px;
+    box-shadow: none;
+}
+
+.edit-profile-dialog-title {
+    color: $textColor;
+}
+
+.edit-profile-dialog-content {
+    color: $textColor;
+}
+
+::ng-deep .edit-profile-custom>mat-dialog-container {
+    background-color: $cardColor;
+}
+
+.edit-profile-actions {
+    display: flex
+}

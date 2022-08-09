@@ -1,0 +1,13 @@
+$backgroundColor: #f8f9fa;
+$cardColor: #fff;
+$textColor: #343a40;
+$boxShadowColor: #e9ecef;
+
+.nav-bar {
+    border-bottom: $boxShadowColor;
+    background-color: $cardColor;
+}
+
+.logout-button {
+    float: right;
+}

@@ -1,0 +1,33 @@
+$backgroundColor: #f8f9fa;
+$cardColor: #fff;
+$textColor: #343a40;
+$boxShadowColor: #e9ecef;
+
+.director-dialog {
+    background-color: $cardColor;
+    margin-top: 0px;
+    box-shadow: none;
+}
+
+.director-dialog-title {
+    color: $textColor;
+}
+
+.director-dialog-content {
+    color: $textColor;
+}
+
+::ng-deep .director-custom>mat-dialog-container {
+    background-color: $cardColor;
+}
+
+.director-close-button.mat-stroked-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0px;
+    line-height: 14px;
+    min-width: auto;
+    border: none;
+    font-size: 20px;
+}
