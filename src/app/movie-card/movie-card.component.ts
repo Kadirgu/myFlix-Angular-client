@@ -46,12 +46,11 @@ export class MovieCardComponent implements OnInit {
    * @returns array holding ids of user's favorite movies
    * @function getFavoriteMovies
    */
-  getFavoriteMovies(): void {
-    this.fetchApiData.getFavoriteMovies().subscribe((resp: any) => {
-      this.favoriteMovies = resp;
-      console.log(this.favoriteMovies);
+   getFavoriteMovies(): void {
+    this.fetchApiData.getUser().subscribe((resp: any) => {
+      this.favoriteMovies = resp.FavoriteMovies;
       return this.favoriteMovies;
-    });
+    })
   }
 
   /**
